@@ -11,30 +11,32 @@ namespace ConsoleApp3
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.Unicode;
+            Console.InputEncoding = System.Text.Encoding.Unicode;
             Console.WriteLine("Привіт Донну і Світ");
-            string name = "Dima";
-            int age = 18;
-            bool isemployed = false;
+
+            Console.Write("Введіть ім'я: ");
+            string name = Console.ReadLine();
+            Console.Write("Введіть вік: ");
+            int age = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введіть ріст: ");
+            double height = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Введіть розмір зарплатні: ");
+            decimal salary = Convert.ToDecimal(Console.ReadLine());
+            Console.WriteLine($"Ім'я: {name}  Вік: {age}  Ріст: {height}м  Зарплата: {salary}$");
+
+            bool isEmployed = false;
             double weight = 68.85;
 
-            Console.WriteLine($"имя: {name}");
-            Console.WriteLine($"возраст: {age}");
-            Console.WriteLine($"вес: {weight}");
-            Console.WriteLine($"работает: {isemployed}");
+            Console.WriteLine($"Ім'я: {name}");
+            Console.WriteLine($"Вік: {age}");
+            Console.WriteLine($"Вага: {weight}");
+            Console.WriteLine($"Працює: {isEmployed}");
 
-            Console.WriteLine("Name: {0} Age: {1} Weight: {2} ", name, age, weight);
+            Console.WriteLine("Ім'я: {0} Вік: {1} Вага: {2} ", name, age, weight);
 
-            Console.WriteLine($"Name: {name} Age: {age} Weight: {weight}");
+            Console.WriteLine($"Ім'я: {name} Вік: {age} Вага: {weight}");
 
-            Console.Write("Введите имя: ");
-            string name1 = Console.ReadLine();
-            Console.Write("Введите возраст: ");
-            int age1 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Введите рост: ");
-            double height = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Введите размер зарплаты: ");
-            decimal salary = Convert.ToDecimal(Console.ReadLine());
-            Console.WriteLine($"Имя: {name1}  Возраст: {age1}  Рост: {height}м  Зарплата: {salary}$");
+
 
             Console.ReadKey();
         }
