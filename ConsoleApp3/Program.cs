@@ -11,7 +11,7 @@ namespace ConsoleApp3
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.Unicode;
-            Console.WriteLine("Привіт Донну");
+            Console.WriteLine("Привіт Донну і світ");
             Console.ReadKey();
         }
     }
