@@ -15,7 +15,7 @@ namespace ConsoleApp3
             string name = "Dima";
             int age = 18;
             bool isemployed = false;
-            double weight = 68.75;
+            double weight = 68.85;
 
             Console.WriteLine($"имя: {name}");
             Console.WriteLine($"возраст: {age}");
